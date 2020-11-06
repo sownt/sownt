@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning at VNU University of Science
 - 🤔 I’m looking for help with Linux
 - 💬 Ask me about Linux, Java or C++
-- 📫 How to reach me: ![Facebook](https://www.facebook.com/vosxvo/) ![Twitter](https://twitter.com/vosxvo) ![My Blog](https://vosxvo.com)
+- 📫 How to reach me: ![Facebook](https://www.facebook.com/vosxvo/), ![Twitter](https://twitter.com/vosxvo) or ![My Blog](https://vosxvo.com)
 
 
 <!--
