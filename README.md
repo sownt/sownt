@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Sơn</h1>
 
-## Love [Ubuntu](https://ubuntu.com)!!! 
+<h1 align="center" href="https://ubuntu.com"> Love Ubuntu!!! </h1>
 
 - 🌱 I’m currently learning at VNU University of Science
 - 🤔 I’m looking for help with Linux
