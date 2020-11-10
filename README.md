@@ -1,5 +1,10 @@
+<img width="22px" align="right" src="./assets/facebook.svg" />
+<img width="22px" align="right" src="./assets/twitter.svg" />
+<img width="22px" align="right" src="./assets/linkedin.svg" />
+<img width="22px" align="right" src="./assets/wordpress.svg" />
+<img width="22px" align="right" src="./assets/youtube.svg" />
+
 ## Hi 👋, I'm Sơn
-<h2><img width="22px" align="right" src="./assets/facebook.svg" /></h2>
 
 <!-- Source : https://simpleicons.org/ -->
 
