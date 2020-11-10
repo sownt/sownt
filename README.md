@@ -1,5 +1,5 @@
 ## Hi 👋, I'm Sơn
-## [<img width="22px" align="right" src="./assets/facebook.svg"></img>]
+<h2><img width="22px" align="right" src="./assets/facebook.svg" /></h2>
 
 <!-- Source : https://simpleicons.org/ -->
 
