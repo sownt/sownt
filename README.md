@@ -1,5 +1,5 @@
-<h1>Hi 👋, I'm Sơn</h1>
-<img width="22px" align="right" src="./assets/facebook.svg"></img>
+## Hi 👋, I'm Sơn
+## [<img width="22px" align="right" src="./assets/facebook.svg"></img>]
 
 <!-- Source : https://simpleicons.org/ -->
 
