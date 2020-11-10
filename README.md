@@ -1,13 +1,11 @@
-<!-- <img width="22px" align="right" src="./assets/facebook.svg" />
-<img width="22px" align="right" src="./assets/twitter.svg" />
-<img width="22px" align="right" src="./assets/linkedin.svg" />
-<img width="22px" align="right" src="./assets/wordpress.svg" />
-<img width="22px" align="right" src="./assets/youtube.svg" /> -->
-[![Facebook](./assets/facebook.svg)](https://www.facebook.com/vosxvo/)
+<img width="22px" alt="Facebook" align="right" src="./assets/facebook.svg" href="https://www.facebook.com/vosxvo/" />
+<img width="22px" alt="Twitter" align="right" src="./assets/twitter.svg" />
+<img width="22px" alt="LinkedIn" align="right" src="./assets/linkedin.svg" />
+<img width="22px" alt="WordPress" align="right" src="./assets/wordpress.svg" />
+<img width="22px" alt="Youtube" align="right" src="./assets/youtube.svg" />
+<!-- Source : https://simpleicons.org/ -->
 
 ## Hi 👋, I'm Sơn
-
-<!-- Source : https://simpleicons.org/ -->
 
 - 🌱 I’m currently learning at VNU University of Science
 - 🤔 I’m looking for help with Linux
