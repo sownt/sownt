@@ -1,5 +1,5 @@
-[<img width="22px" alt="Facebook" align="right" src="./assets/facebook.svg" />][https://www.facebook.com/vosxvo/]
-[<img width="22px" alt="Twitter" align="right" src="./assets/twitter.svg" />][https://twitter.com/vosxvo]
+[<img width="22px" alt="Facebook" align="right" src="./assets/facebook.svg" />][facebook]
+[<img width="22px" alt="Twitter" align="right" src="./assets/twitter.svg" />][twitter]
 [<img width="22px" alt="LinkedIn" align="right" src="./assets/linkedin.svg" />]
 [<img width="22px" alt="WordPress" align="right" src="./assets/wordpress.svg" />]
 [<img width="22px" alt="Youtube" align="right" src="./assets/youtube.svg" />]
@@ -10,7 +10,10 @@
 - 🌱 I’m currently learning at VNU University of Science
 - 🤔 I’m looking for help with Linux
 - 💬 Ask me about Linux, Java or C++
-- 📫 How to reach me: [Facebook](https://www.facebook.com/vosxvo/), [Twitter](https://twitter.com/vosxvo) or [My Blog](https://vosxvo.com)
+- 📫 How to reach me: [Facebook](https://www.facebook.com/vosxvo), [Twitter](https://twitter.com/vosxvo) or [My Blog](https://vosxvo.com)
+
+[facebook]:https://www.facebook.com/vosxvo
+[twitter]:https://twitter.com/vosxvo
 
 <!--
 **vosxvo/vosxvo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
