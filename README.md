@@ -2,7 +2,9 @@
 [<img width="22px" alt="Twitter" align="right" src="./assets/twitter.svg" />][twitter]
 [<img width="22px" alt="LinkedIn" align="right" src="./assets/linkedin.svg" />][linkedin]
 [<img width="22px" alt="WordPress" align="right" src="./assets/rss.svg" />][rss]
-<h1> Hi 👋, I'm Sơn </h1>
+## Hi 👋, I'm Son
+
+I'm student at VNU University of Science, major in Computers and Informations Science (Honor Program).
 
 [facebook]:https://www.facebook.com/vosxvo
 [twitter]:https://twitter.com/vosxvo
