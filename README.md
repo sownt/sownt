@@ -2,7 +2,7 @@
 [<img width="22px" alt="Twitter" align="right" src="./assets/twitter.svg" />][twitter]
 [<img width="22px" alt="LinkedIn" align="right" src="./assets/linkedin.svg" />][linkedin]
 [<img width="22px" alt="WordPress" align="right" src="./assets/rss.svg" />][rss]
-## Hi 👋, I'm Son
+Hi 👋, I'm Son
 
 I'm student at VNU University of Science, major in Computers and Informations Science (Honor Program).
 
