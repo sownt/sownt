@@ -1,4 +1,7 @@
-<h1 align="center">Hi 👋, I'm Sơn</h1>
+<h1>Hi 👋, I'm Sơn</h1>
+<img width="22px" align="right" src="./assets/facebook.svg"></img>
+
+<!-- Source : https://simpleicons.org/ -->
 
 - 🌱 I’m currently learning at VNU University of Science
 - 🤔 I’m looking for help with Linux
