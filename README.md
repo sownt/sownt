@@ -2,7 +2,7 @@
 
 I'm student at **VNU University of Science**, major in **Computers and Informations Science (Honor Program)**.
 
-### Knowledge [<img width="22px" alt="Java" align="right" src="./assets/java.svg"/>][none] [<img width="22px" alt="CPP" align="right" src="./assets/cplusplus.svg"/>][none] [<img width="22px" alt="Linux" align="right" src="./assets/linux.svg"/>][none] [<img width="22px" alt="Ubuntu" align="right" src="./assets/ubuntu.svg"/>][none] [<img width="22px" alt="Docker" align="right" src="./assets/docker.svg"/>][none]
+### Knowledge [<img width="22px" alt="Java" align="right" src="./assets/java.svg"/>][none] [<img width="22px" alt="CPP" align="right" src="./assets/cplusplus.svg"/>][none] [<img width="22px" alt="Linux" align="right" src="./assets/linux.svg"/>][none] [<img width="22px" alt="Ubuntu" align="right" src="./assets/ubuntu.svg"/>][none] [<img width="22px" alt="Docker" align="right" src="./assets/docker.svg"/>][none] [<img width="22px" alt="MySQL" align="right" src="./assets/mysql.svg"/>][none] [<img width="22px" alt="WordPress" align="right" src="./assets/wordpress.svg"/>][none]
 
 [facebook]:https://www.facebook.com/vosxvo
 [twitter]:https://twitter.com/vosxvo
