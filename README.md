@@ -8,6 +8,7 @@ I'm student at **VNU University of Science**, major in **Computers and Informati
 [twitter]:https://twitter.com/vosxvo
 [linkedin]:https://www.linkedin.com/in/vosxvo
 [rss]:https://vosxvo.com
+[java]:#
 
 <!--
 **vosxvo/vosxvo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
