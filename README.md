@@ -4,9 +4,9 @@ I'm student at **VNU University of Science** in Hanoi, Vietnam. Major in **Compu
 
 ### Knowledge   
 
-#### Programming Languages : [<img width="22px" alt="Java" src="./assets/java.svg"/>][none] Java    [<img width="22px" alt="CPP" src="./assets/cplusplus.svg"/>][none] C++    [<img width="22px" alt="Linux" src="./assets/linux.svg"/>][none] Linux Bash Shell    [<img width="22px" alt="MySQL" src="./assets/mysql.svg"/>][none] SQL
+#### Programming Languages : [<img width="22px" alt="Java" align="right" src="./assets/java.svg"/>][none] [<img width="22px" alt="CPP" align="right" src="./assets/cplusplus.svg"/>][none] [<img width="22px" alt="Linux" align="right" src="./assets/linux.svg"/>][none] [<img width="22px" alt="MySQL" align="right" src="./assets/mysql.svg"/>][none]
 
-#### Tools : [<img width="22px" alt="Docker" src="./assets/docker.svg"/>][none] Docker    [<img width="22px" alt="WordPress" src="./assets/wordpress.svg"/>][none] WordPress    [<img width="22px" alt="Ubuntu" src="./assets/ubuntu.svg"/>][none] Ubuntu
+#### Tools : [<img width="22px" alt="Docker" align="right" src="./assets/docker.svg"/>][none] [<img width="22px" alt="WordPress" align="right" src="./assets/wordpress.svg"/>][none] [<img width="22px" alt="Ubuntu" align="right" src="./assets/ubuntu.svg"/>][none]
 
 [facebook]:https://www.facebook.com/vosxvo
 [twitter]:https://twitter.com/vosxvo
