@@ -10,10 +10,10 @@
 
 ### Tools : [<img width="22px" alt="WordPress" align="right" src="./assets/wordpress.svg"/>][none] [<img width="22px" alt="Ubuntu" align="right" src="./assets/ubuntu.svg"/>][none] [<img width="22px" alt="Docker" align="right" src="./assets/docker.svg"/>][none]
 
-[facebook]:https://www.facebook.com/vosxvo
-[twitter]:https://twitter.com/vosxvo
-[linkedin]:https://www.linkedin.com/in/vosxvo
-[rss]:https://vosxvo.com
+[facebook]:https://www.facebook.com/tranthaisown
+[twitter]:https://twitter.com/sonwtranthai
+[linkedin]:https://www.linkedin.com/in/sownt/
+[rss]:#
 [none]:#
 
 <!--
