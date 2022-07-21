@@ -1,9 +1,0 @@
-remote_theme: just-the-docs/just-the-docs
-
-aux_links:
-  "Github":
-    - "//github.com/sownt"
-
-aux_links_new_tab: true
-
-footer_content: "Copyright &copy; 2022.</a>"
