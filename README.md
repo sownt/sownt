@@ -1,4 +1,4 @@
-## Hi 👋, [<img width="38px" alt="Facebook" align="right" src="./assets/facebook.svg"/>][facebook] [<img width="38px" alt="Facebook" align="right" src="./assets/facebook_dark.svg"/>][facebook-dark] [<img width="38px" alt="LinkedIn" align="right" src="./assets/linkedin.svg"/>][linkedin] [<img width="38px" alt="LinkedIn" align="right" src="./assets/linkedin_dark.svg"/>][linkedin-dark]
+## Hi 👋, I'm Sơn `/sə:n/` [<img width="24px" alt="Facebook" align="right" src="./assets/facebook.svg"/>][facebook] [<img width="24px" alt="Facebook" align="right" src="./assets/facebook_dark.svg"/>][facebook-dark] [<img width="24px" alt="LinkedIn" align="right" src="./assets/linkedin.svg"/>][linkedin] [<img width="24px" alt="LinkedIn" align="right" src="./assets/linkedin_dark.svg"/>][linkedin-dark]
 
  - I am currently a **Mobile Developer**.
  - Love **Linux**, especially **Ubuntu**.
