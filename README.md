@@ -1,4 +1,4 @@
-## Hi 👋, I'm Sơn `/sə:n/` [<img width="24px" alt="Facebook" align="right" src="./assets/facebook.svg"/>][facebook] [<img width="24px" alt="Facebook" align="right" src="./assets/facebook_dark.svg"/>][facebook-dark] [<img width="24px" alt="LinkedIn" align="right" src="./assets/linkedin.svg"/>][linkedin] [<img width="24px" alt="LinkedIn" align="right" src="./assets/linkedin_dark.svg"/>][linkedin-dark]
+## Hi 👋, I'm Sơn `/sə:n/` [<img width="24px" alt="Telegram" align="right" src="./assets/telegram.svg"/>][telegram] [<img width="24px" alt="Telegram" align="right" src="./assets/telegram_dark.svg"/>][telegram-dark] [<img width="24px" alt="Facebook" align="right" src="./assets/facebook.svg"/>][facebook] [<img width="24px" alt="Facebook" align="right" src="./assets/facebook_dark.svg"/>][facebook-dark] [<img width="24px" alt="LinkedIn" align="right" src="./assets/linkedin.svg"/>][linkedin] [<img width="24px" alt="LinkedIn" align="right" src="./assets/linkedin_dark.svg"/>][linkedin-dark]
 
  - 🌱 I am currently a **Mobile Developer**.
  - ✨ Love **Linux**, especially **Ubuntu**.
@@ -9,10 +9,25 @@
 
 ### Workspace Setups
 <div align="center">
+    <!-- Docker -->
+    <img href="./zsh/README.md" width="21px" alt="Docker" src="./assets/docker.svg#gh-light-mode-only"/>
+    <img href="./zsh/README.md" width="21px" alt="Docker" src="./assets/docker_dark.svg#gh-dark-mode-only"/>
+    <!-- Nginx -->
+    <img width="21px" alt="Nginx" src="./assets/nginx.svg#gh-light-mode-only"/>
+    <img width="21px" alt="Nginx" src="./assets/nginx_dark.svg#gh-dark-mode-only"/>
+    <!-- Ubuntu -->
+    <img width="21px" alt="Ubuntu" src="./assets/ubuntu.svg#gh-light-mode-only"/>
+    <img width="21px" alt="Ubuntu" src="./assets/ubuntu_dark.svg#gh-dark-mode-only"/>
+    <!-- BASH -->
+    <img width="21px" alt="BASH" src="./assets/bash.svg#gh-light-mode-only"/>
+    <img width="21px" alt="BASH" src="./assets/bash_dark.svg#gh-dark-mode-only"/>
+    <!-- Android Studio -->
     <img width="21px" alt="Android Studio" src="./assets/androidstudio.svg#gh-light-mode-only"/>
     <img width="21px" alt="Android Studio" src="./assets/androidstudio_dark.svg#gh-dark-mode-only"/>
 </div>
 
+[telegram]:https://t.me/sowntt
+[telegram-dark]:https://t.me/sowntt
 [facebook]:https://www.facebook.com/transownt#gh-light-mode-only
 [facebook-dark]:https://www.facebook.com/transownt#gh-dark-mode-only
 [linkedin]:https://www.linkedin.com/in/sownt#gh-light-mode-only
