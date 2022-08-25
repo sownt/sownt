@@ -42,8 +42,8 @@
     </a>
 </div>
 
-[telegram]:https://t.me/sowntt
-[telegram-dark]:https://t.me/sowntt
+[telegram]:https://t.me/sowntt#gh-light-mode-only
+[telegram-dark]:https://t.me/sowntt#gh-dark-mode-only
 [facebook]:https://www.facebook.com/transownt#gh-light-mode-only
 [facebook-dark]:https://www.facebook.com/transownt#gh-dark-mode-only
 [linkedin]:https://www.linkedin.com/in/sownt#gh-light-mode-only
