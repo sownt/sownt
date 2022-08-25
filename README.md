@@ -10,27 +10,33 @@
 ### Workspace Setups
 <div align="center">
     <!-- Docker -->
-    <a style="margin: 16px">
+    <a>
         <img width="32px" alt="Docker" src="./assets/docker.svg#gh-light-mode-only"/>
         <img width="32px" alt="Docker" src="./assets/docker_dark.svg#gh-dark-mode-only"/>
     </a>
+    &nbsp;&nbsp;&nbsp;
     <!-- Nginx -->
-    <a style="margin: 16px">
+    <a>
         <img width="32px" alt="Nginx" src="./assets/nginx.svg#gh-light-mode-only"/>
         <img width="32px" alt="Nginx" src="./assets/nginx_dark.svg#gh-dark-mode-only"/>
     </a>
+    &nbsp;&nbsp;&nbsp;
     <!-- Ubuntu -->
-    <a style="margin: 16px">
+    <a>
         <img width="32px" alt="Ubuntu" src="./assets/ubuntu.svg#gh-light-mode-only"/>
         <img width="32px" alt="Ubuntu" src="./assets/ubuntu_dark.svg#gh-dark-mode-only"/>
     </a>
+    &nbsp;&nbsp;&nbsp;
     <!-- BASH -->
-    <a href="./zsh/README.md" style="margin: 16px">
+    <a href="./zsh/README.md">
         <img width="32px" alt="BASH" src="./assets/bash.svg#gh-light-mode-only"/>
+    </a>
+    <a href="./zsh/README.md">
         <img width="32px" alt="BASH" src="./assets/bash_dark.svg#gh-dark-mode-only"/>
     </a>
+    &nbsp;&nbsp;&nbsp;
     <!-- Android Studio -->
-    <a style="margin: 16px">
+    <a>
         <img width="32px" alt="Android Studio" src="./assets/androidstudio.svg#gh-light-mode-only"/>
         <img width="32px" alt="Android Studio" src="./assets/androidstudio_dark.svg#gh-dark-mode-only"/>
     </a>
