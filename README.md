@@ -28,11 +28,11 @@
     </a>
     &nbsp;&nbsp;&nbsp;
     <!-- BASH -->
-    <a href="./zsh/README.md">
-        <img width="32px" alt="BASH" src="./assets/bash.svg#gh-light-mode-only"/>
+    <a href="./zsh/README.md#gh-light-mode-only">
+        <img width="32px" alt="BASH" src="./assets/bash.svg"/>
     </a>
-    <a href="./zsh/README.md">
-        <img width="32px" alt="BASH" src="./assets/bash_dark.svg#gh-dark-mode-only"/>
+    <a href="./zsh/README.md#gh-dark-mode-only">
+        <img width="32px" alt="BASH" src="./assets/bash_dark.svg"/>
     </a>
     &nbsp;&nbsp;&nbsp;
     <!-- Android Studio -->
