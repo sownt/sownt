@@ -47,6 +47,7 @@ jobs:
       - run: flutter --version
       - name: Install dependencies
         run: flutter pub get
+        working-directory: ./site
       - name: Build for web
         run: flutter build web
         working-directory: ./site
