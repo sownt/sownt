@@ -47,6 +47,18 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  double opacityLevel = 0.0;
+
+  void _changeOpacity() {
+    setState(() => opacityLevel = opacityLevel == 0 ? 1.0 : 0.0);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 1), _changeOpacity);
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -67,31 +79,41 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontSize: 62,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w800,
+                AnimatedOpacity(
+                  opacity: opacityLevel,
+                  duration: const Duration(seconds: 2),
+                  child: RichText(
+                    text: TextSpan(
+                      style: const TextStyle(
+                        fontSize: 62,
+                        fontFamily: 'Inter',
+                        fontWeight: FontWeight.w800,
+                      ),
+                      children: [
+                        const TextSpan(text: 'Hi, I\'m '),
+                        TextSpan(
+                            text: 'Sơn!\n',
+                            style: TextStyle(color: Colors.yellow.shade800)),
+                        const TextSpan(text: 'Mobile Developer\n'),
+                        const TextSpan(text: 'in Hanoi.'),
+                      ],
                     ),
-                    children: [
-                      const TextSpan(text: 'Hi, I\'m '),
-                      TextSpan(text: 'Sơn!\n', style: TextStyle(color: Colors.yellow.shade800)),
-                      const TextSpan(text: 'Mobile Developer\n'),
-                      const TextSpan(text: 'in Hanoi.'),
-                    ],
                   ),
                 ),
                 const SizedBox(height: 16),
               ],
             ),
             const Spacer(),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(256),
-              child: Image.asset(
-                'assets/avatar.png',
-                width: 512,
-                height: 512,
+            AnimatedOpacity(
+              opacity: opacityLevel,
+              duration: const Duration(seconds: 2),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(256),
+                child: Image.asset(
+                  'assets/avatar.png',
+                  width: 512,
+                  height: 512,
+                ),
               ),
             ),
             const Spacer(),
