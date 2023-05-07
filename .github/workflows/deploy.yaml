@@ -31,6 +31,7 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
+    name: Build and deploy profile
     environment:
       name: Deployment
       url: ${{ steps.deployment.outputs.page_url }}
@@ -42,7 +43,9 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-      - run: flutter --version
+      - run: |
+          cd site
+          flutter --version
       - name: Install dependencies
         run: flutter pub get
       - name: Build for web
