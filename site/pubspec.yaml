@@ -92,11 +92,6 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   fonts:
-    - family: Karla
-      fonts:
-        - asset: fonts/Karla-Regular.ttf
-        - asset: fonts/Karla-Bold.ttf
-        - asset: fonts/Karla-ExtraBold.ttf
     - family: Inter
       fonts:
         - asset: fonts/Inter-Regular.ttf
