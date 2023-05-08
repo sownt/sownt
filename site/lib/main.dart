@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      backgroundColor: Colors.yellow.shade50,
+      // backgroundColor: Colors.yellow.shade50,
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
@@ -92,15 +92,39 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: [
                         const TextSpan(text: 'Hi, I\'m '),
                         TextSpan(
-                            text: 'Sơn!\n',
-                            style: TextStyle(color: Colors.yellow.shade800)),
+                          text: 'Sơn!\n',
+                          style: TextStyle(color: Colors.yellow.shade600),
+                        ),
                         const TextSpan(text: 'Mobile Developer\n'),
                         const TextSpan(text: 'in Hanoi.'),
                       ],
                     ),
                   ),
                 ),
-                const SizedBox(height: 16),
+                // const SizedBox(height: 24),
+                // ElevatedButton(
+                //   onPressed: () {},
+                //   style: ButtonStyle(
+                //     foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                //     backgroundColor: MaterialStateProperty.all<Color>(Colors.yellow.shade800),
+                //     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                //       RoundedRectangleBorder(
+                //         borderRadius: BorderRadius.circular(8),
+                //         side: BorderSide(color: Colors.yellow.shade800),
+                //       ),
+                //     ),
+                //   ),
+                //   child: const Padding(
+                //     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 32),
+                //     child: Text(
+                //       'Contact',
+                //       style: TextStyle(
+                //         fontSize: 24,
+                //         fontFamily: 'Inter',
+                //       ),
+                //     ),
+                //   ),
+                // )
               ],
             ),
             const Spacer(),
@@ -108,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
               opacity: opacityLevel,
               duration: const Duration(seconds: 2),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(256),
+                borderRadius: BorderRadius.circular(0),
                 child: Image.asset(
                   'assets/avatar.png',
                   width: 512,
