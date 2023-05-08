@@ -44,8 +44,8 @@
 
 [telegram]:https://t.me/sowntt#gh-light-mode-only
 [telegram-dark]:https://t.me/sowntt#gh-dark-mode-only
-[facebook]:https://www.facebook.com/transownt#gh-light-mode-only
-[facebook-dark]:https://www.facebook.com/transownt#gh-dark-mode-only
+[facebook]:https://www.facebook.com/thaison181/#gh-light-mode-only
+[facebook-dark]:https://www.facebook.com/thaison181/#gh-dark-mode-only
 [linkedin]:https://www.linkedin.com/in/sownt#gh-light-mode-only
 [linkedin-dark]:https://www.linkedin.com/in/sownt#gh-dark-mode-only
 [light]:#gh-light-mode-only

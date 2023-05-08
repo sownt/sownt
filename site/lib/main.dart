@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
+  usePathUrlStrategy();
   runApp(const MyApp());
 }
 
@@ -101,7 +105,50 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                // const SizedBox(height: 24),
+                const SizedBox(height: 24),
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: () async => await launchUrl(Uri.parse('https://github.com/sownt')),
+                      icon: SvgPicture.asset('assets/icons/github.svg'),
+                      color: Colors.black,
+                      constraints: const BoxConstraints(),
+                      padding: EdgeInsets.zero,
+                    ),
+                    const SizedBox(width: 16),
+                    IconButton(
+                      onPressed: () async => await launchUrl(Uri.parse('https://www.linkedin.com/in/sownt')),
+                      icon: SvgPicture.asset('assets/icons/linkedin-in.svg'),
+                      color: Colors.black,
+                      constraints: const BoxConstraints(),
+                      padding: EdgeInsets.zero,
+                    ),
+                    const SizedBox(width: 16),
+                    IconButton(
+                      onPressed: () async => await launchUrl(Uri.parse('https://www.facebook.com/thaison181/')),
+                      icon: SvgPicture.asset('assets/icons/facebook-f.svg'),
+                      color: Colors.black,
+                      constraints: const BoxConstraints(),
+                      padding: EdgeInsets.zero,
+                    ),
+                    const SizedBox(width: 16),
+                    IconButton(
+                      onPressed: () async => await launchUrl(Uri.parse('mailto:contact@sownt.com')),
+                      icon: SvgPicture.asset('assets/icons/at-solid.svg'),
+                      color: Colors.black,
+                      constraints: const BoxConstraints(),
+                      padding: EdgeInsets.zero,
+                    ),
+                    const SizedBox(width: 16),
+                    IconButton(
+                      onPressed: () async => await launchUrl(Uri.parse('https://t.me/sowntt')),
+                      icon: SvgPicture.asset('assets/icons/telegram.svg'),
+                      color: Colors.black,
+                      constraints: const BoxConstraints(),
+                      padding: EdgeInsets.zero,
+                    ),
+                  ],
+                )
                 // ElevatedButton(
                 //   onPressed: () {},
                 //   style: ButtonStyle(
