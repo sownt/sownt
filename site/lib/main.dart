@@ -60,117 +60,249 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 100), _changeOpacity);
+    Future.delayed(const Duration(milliseconds: 500), _changeOpacity);
   }
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Scaffold(
       // backgroundColor: Colors.yellow.shade50,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 56, horizontal: 64),
-        child: Center(
-          child: Row(
-            children: [
-              const Spacer(),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  AnimatedOpacity(
-                    opacity: opacityLevel,
-                    duration: const Duration(seconds: 1),
-                    child: RichText(
-                      text: TextSpan(
-                        style: TextStyle(
-                          fontSize: size.width / 30,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w800,
-                        ),
-                        children: [
-                          const TextSpan(text: 'Hi, I\'m '),
-                          TextSpan(
-                            text: 'Sơn!\n',
-                            style: TextStyle(color: Colors.yellow.shade600),
-                          ),
-                          TextSpan(
-                            text: 'Mobile Developer\nin Hanoi.',
-                            style: TextStyle(fontSize: size.width / 34, fontWeight: FontWeight.normal),
-                          ),
-                        ],
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth < 768) {
+            return _buildMobile(context);
+          } else {
+            return _buildDesktop(context);
+          }
+        },
+      ),
+    );
+  }
+
+  Widget _buildMobile(BuildContext context) {
+    final media = MediaQuery.of(context).size;
+    final heading = media.width ~/ 40 > 18 ? media.width ~/ 40 : 18;
+    final avatarSize = media.width ~/ 4;
+    return Padding(
+      padding: const EdgeInsets.all(32),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            AnimatedOpacity(
+              opacity: opacityLevel,
+              duration: const Duration(seconds: 1),
+              child: Image.asset(
+                'assets/avatar.png',
+                width: avatarSize * 1.0,
+                height: avatarSize * 1.0,
+              ),
+            ),
+            const SizedBox(height: 16),
+            AnimatedOpacity(
+              opacity: opacityLevel,
+              duration: const Duration(seconds: 1),
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  style: TextStyle(
+                    fontSize: heading * 1.0,
+                    height: 1.3,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w800,
+                  ),
+                  children: [
+                    const TextSpan(text: 'Hi, I\'m '),
+                    TextSpan(
+                      text: 'Sơn!\n',
+                      style: TextStyle(
+                        color: Colors.yellow.shade600,
                       ),
                     ),
+                    const TextSpan(
+                      text: 'Mobile Developer\nin Hanoi, Vietnam',
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 36),
+            AnimatedOpacity(
+              opacity: opacityLevel,
+              duration: const Duration(seconds: 1),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    tooltip: 'Github',
+                    onPressed: () async =>
+                        await launchUrl(Uri.parse('https://github.com/sownt')),
+                    icon: SvgPicture.asset('assets/icons/github.svg'),
+                    color: Colors.black,
+                    constraints: const BoxConstraints(),
+                    padding: EdgeInsets.zero,
                   ),
-                  const SizedBox(height: 24),
-                  AnimatedOpacity(
-                    opacity: opacityLevel,
-                    duration: const Duration(seconds: 1),
-                    child: Row(
+                  const SizedBox(width: 16),
+                  IconButton(
+                    tooltip: 'LinkedIn',
+                    onPressed: () async => await launchUrl(
+                        Uri.parse('https://www.linkedin.com/in/sownt')),
+                    icon: SvgPicture.asset('assets/icons/linkedin-in.svg'),
+                    color: Colors.black,
+                    constraints: const BoxConstraints(),
+                    padding: EdgeInsets.zero,
+                  ),
+                  const SizedBox(width: 16),
+                  IconButton(
+                    tooltip: 'Email',
+                    onPressed: () async =>
+                        await launchUrl(Uri.parse('mailto:contact@sownt.com')),
+                    icon: SvgPicture.asset('assets/icons/at-solid.svg'),
+                    color: Colors.black,
+                    constraints: const BoxConstraints(),
+                    padding: EdgeInsets.zero,
+                  ),
+                  const SizedBox(width: 16),
+                  IconButton(
+                    tooltip: 'Telegram',
+                    onPressed: () async =>
+                        await launchUrl(Uri.parse('https://t.me/sowntt')),
+                    icon: SvgPicture.asset('assets/icons/telegram.svg'),
+                    color: Colors.black,
+                    constraints: const BoxConstraints(),
+                    padding: EdgeInsets.zero,
+                  ),
+                  const SizedBox(width: 16),
+                  IconButton(
+                    tooltip: 'Facebook',
+                    onPressed: () async => await launchUrl(
+                        Uri.parse('https://www.facebook.com/thaison181/')),
+                    icon: SvgPicture.asset('assets/icons/facebook.svg'),
+                    color: Colors.black,
+                    constraints: const BoxConstraints(),
+                    padding: EdgeInsets.zero,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildDesktop(BuildContext context) {
+    final media = MediaQuery.of(context).size;
+    final heading = media.width ~/ 40;
+    final avatarSize = media.width ~/ 4;
+    return Padding(
+      padding: const EdgeInsets.all(64),
+      child: Center(
+        child: Row(
+          children: [
+            const Spacer(),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                AnimatedOpacity(
+                  opacity: opacityLevel,
+                  duration: const Duration(seconds: 1),
+                  child: RichText(
+                    text: TextSpan(
+                      style: TextStyle(
+                        fontSize: heading * 1.0,
+                        height: 1.3,
+                        fontFamily: 'Inter',
+                        fontWeight: FontWeight.w800,
+                      ),
                       children: [
-                        IconButton(
-                          onPressed: () async => await launchUrl(
-                              Uri.parse('https://github.com/sownt')),
-                          icon: SvgPicture.asset('assets/icons/github.svg'),
-                          color: Colors.black,
-                          constraints: const BoxConstraints(),
-                          padding: EdgeInsets.zero,
+                        const TextSpan(text: 'Hi, I\'m '),
+                        TextSpan(
+                          text: 'Sơn!\n',
+                          style: TextStyle(
+                            color: Colors.yellow.shade600,
+                          ),
                         ),
-                        const SizedBox(width: 16),
-                        IconButton(
-                          onPressed: () async => await launchUrl(
-                              Uri.parse('https://www.linkedin.com/in/sownt')),
-                          icon:
-                              SvgPicture.asset('assets/icons/linkedin-in.svg'),
-                          color: Colors.black,
-                          constraints: const BoxConstraints(),
-                          padding: EdgeInsets.zero,
-                        ),
-                        const SizedBox(width: 16),
-                        IconButton(
-                          onPressed: () async => await launchUrl(
-                              Uri.parse('mailto:contact@sownt.com')),
-                          icon: SvgPicture.asset('assets/icons/at-solid.svg'),
-                          color: Colors.black,
-                          constraints: const BoxConstraints(),
-                          padding: EdgeInsets.zero,
-                        ),
-                        const SizedBox(width: 16),
-                        IconButton(
-                          onPressed: () async =>
-                              await launchUrl(Uri.parse('https://t.me/sowntt')),
-                          icon: SvgPicture.asset('assets/icons/telegram.svg'),
-                          color: Colors.black,
-                          constraints: const BoxConstraints(),
-                          padding: EdgeInsets.zero,
-                        ),
-                        const SizedBox(width: 16),
-                        IconButton(
-                          onPressed: () async => await launchUrl(Uri.parse(
-                              'https://www.facebook.com/thaison181/')),
-                          icon: SvgPicture.asset('assets/icons/facebook.svg'),
-                          color: Colors.black,
-                          constraints: const BoxConstraints(),
-                          padding: EdgeInsets.zero,
+                        const TextSpan(
+                          text: 'Mobile Developer\nin Hanoi, Vietnam.',
                         ),
                       ],
                     ),
                   ),
-                ],
-              ),
-              const Spacer(),
-              AnimatedOpacity(
-                opacity: opacityLevel,
-                duration: const Duration(seconds: 1),
-                child: Image.asset(
-                  'assets/avatar.png',
-                  width: size.width / 4,
-                  height: size.width / 4,
                 ),
+                const SizedBox(height: 24),
+                AnimatedOpacity(
+                  opacity: opacityLevel,
+                  duration: const Duration(seconds: 1),
+                  child: Row(
+                    children: [
+                      IconButton(
+                        tooltip: 'Github',
+                        onPressed: () async => await launchUrl(
+                            Uri.parse('https://github.com/sownt')),
+                        icon: SvgPicture.asset('assets/icons/github.svg'),
+                        color: Colors.black,
+                        constraints: const BoxConstraints(),
+                        padding: EdgeInsets.zero,
+                      ),
+                      const SizedBox(width: 16),
+                      IconButton(
+                        tooltip: 'LinkedIn',
+                        onPressed: () async => await launchUrl(
+                            Uri.parse('https://www.linkedin.com/in/sownt')),
+                        icon: SvgPicture.asset('assets/icons/linkedin-in.svg'),
+                        color: Colors.black,
+                        constraints: const BoxConstraints(),
+                        padding: EdgeInsets.zero,
+                      ),
+                      const SizedBox(width: 16),
+                      IconButton(
+                        tooltip: 'Email',
+                        onPressed: () async => await launchUrl(
+                            Uri.parse('mailto:contact@sownt.com')),
+                        icon: SvgPicture.asset('assets/icons/at-solid.svg'),
+                        color: Colors.black,
+                        constraints: const BoxConstraints(),
+                        padding: EdgeInsets.zero,
+                      ),
+                      const SizedBox(width: 16),
+                      IconButton(
+                        tooltip: 'Telegram',
+                        onPressed: () async =>
+                            await launchUrl(Uri.parse('https://t.me/sowntt')),
+                        icon: SvgPicture.asset('assets/icons/telegram.svg'),
+                        color: Colors.black,
+                        constraints: const BoxConstraints(),
+                        padding: EdgeInsets.zero,
+                      ),
+                      const SizedBox(width: 16),
+                      IconButton(
+                        tooltip: 'Facebook',
+                        onPressed: () async => await launchUrl(
+                            Uri.parse('https://www.facebook.com/thaison181/')),
+                        icon: SvgPicture.asset('assets/icons/facebook.svg'),
+                        color: Colors.black,
+                        constraints: const BoxConstraints(),
+                        padding: EdgeInsets.zero,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const Spacer(),
+            AnimatedOpacity(
+              opacity: opacityLevel,
+              duration: const Duration(seconds: 1),
+              child: Image.asset(
+                'assets/avatar.png',
+                width: avatarSize * 1.0,
+                height: avatarSize * 1.0,
               ),
-              const Spacer(),
-            ],
-          ),
+            ),
+            const Spacer(),
+          ],
         ),
       ),
     );
