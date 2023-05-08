@@ -60,135 +60,117 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 1), _changeOpacity);
+    Future.delayed(const Duration(milliseconds: 100), _changeOpacity);
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       // backgroundColor: Colors.yellow.shade50,
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Row(
-          children: [
-            const Spacer(),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                AnimatedOpacity(
-                  opacity: opacityLevel,
-                  duration: const Duration(seconds: 2),
-                  child: RichText(
-                    text: TextSpan(
-                      style: const TextStyle(
-                        fontSize: 62,
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w800,
-                      ),
-                      children: [
-                        const TextSpan(text: 'Hi, I\'m '),
-                        TextSpan(
-                          text: 'Sơn!\n',
-                          style: TextStyle(color: Colors.yellow.shade600),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 56, horizontal: 64),
+        child: Center(
+          child: Row(
+            children: [
+              const Spacer(),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AnimatedOpacity(
+                    opacity: opacityLevel,
+                    duration: const Duration(seconds: 1),
+                    child: RichText(
+                      text: TextSpan(
+                        style: TextStyle(
+                          fontSize: size.width / 30,
+                          fontFamily: 'Inter',
+                          fontWeight: FontWeight.w800,
                         ),
-                        const TextSpan(text: 'Mobile Developer\n'),
-                        const TextSpan(text: 'in Hanoi.'),
+                        children: [
+                          const TextSpan(text: 'Hi, I\'m '),
+                          TextSpan(
+                            text: 'Sơn!\n',
+                            style: TextStyle(color: Colors.yellow.shade600),
+                          ),
+                          TextSpan(
+                            text: 'Mobile Developer\nin Hanoi.',
+                            style: TextStyle(fontSize: size.width / 34, fontWeight: FontWeight.normal),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  AnimatedOpacity(
+                    opacity: opacityLevel,
+                    duration: const Duration(seconds: 1),
+                    child: Row(
+                      children: [
+                        IconButton(
+                          onPressed: () async => await launchUrl(
+                              Uri.parse('https://github.com/sownt')),
+                          icon: SvgPicture.asset('assets/icons/github.svg'),
+                          color: Colors.black,
+                          constraints: const BoxConstraints(),
+                          padding: EdgeInsets.zero,
+                        ),
+                        const SizedBox(width: 16),
+                        IconButton(
+                          onPressed: () async => await launchUrl(
+                              Uri.parse('https://www.linkedin.com/in/sownt')),
+                          icon:
+                              SvgPicture.asset('assets/icons/linkedin-in.svg'),
+                          color: Colors.black,
+                          constraints: const BoxConstraints(),
+                          padding: EdgeInsets.zero,
+                        ),
+                        const SizedBox(width: 16),
+                        IconButton(
+                          onPressed: () async => await launchUrl(
+                              Uri.parse('mailto:contact@sownt.com')),
+                          icon: SvgPicture.asset('assets/icons/at-solid.svg'),
+                          color: Colors.black,
+                          constraints: const BoxConstraints(),
+                          padding: EdgeInsets.zero,
+                        ),
+                        const SizedBox(width: 16),
+                        IconButton(
+                          onPressed: () async =>
+                              await launchUrl(Uri.parse('https://t.me/sowntt')),
+                          icon: SvgPicture.asset('assets/icons/telegram.svg'),
+                          color: Colors.black,
+                          constraints: const BoxConstraints(),
+                          padding: EdgeInsets.zero,
+                        ),
+                        const SizedBox(width: 16),
+                        IconButton(
+                          onPressed: () async => await launchUrl(Uri.parse(
+                              'https://www.facebook.com/thaison181/')),
+                          icon: SvgPicture.asset('assets/icons/facebook.svg'),
+                          color: Colors.black,
+                          constraints: const BoxConstraints(),
+                          padding: EdgeInsets.zero,
+                        ),
                       ],
                     ),
                   ),
-                ),
-                const SizedBox(height: 24),
-                Row(
-                  children: [
-                    IconButton(
-                      onPressed: () async => await launchUrl(Uri.parse('https://github.com/sownt')),
-                      icon: SvgPicture.asset('assets/icons/github.svg'),
-                      color: Colors.black,
-                      constraints: const BoxConstraints(),
-                      padding: EdgeInsets.zero,
-                    ),
-                    const SizedBox(width: 16),
-                    IconButton(
-                      onPressed: () async => await launchUrl(Uri.parse('https://www.linkedin.com/in/sownt')),
-                      icon: SvgPicture.asset('assets/icons/linkedin-in.svg'),
-                      color: Colors.black,
-                      constraints: const BoxConstraints(),
-                      padding: EdgeInsets.zero,
-                    ),
-                    const SizedBox(width: 16),
-                    IconButton(
-                      onPressed: () async => await launchUrl(Uri.parse('https://www.facebook.com/thaison181/')),
-                      icon: SvgPicture.asset('assets/icons/facebook-f.svg'),
-                      color: Colors.black,
-                      constraints: const BoxConstraints(),
-                      padding: EdgeInsets.zero,
-                    ),
-                    const SizedBox(width: 16),
-                    IconButton(
-                      onPressed: () async => await launchUrl(Uri.parse('mailto:contact@sownt.com')),
-                      icon: SvgPicture.asset('assets/icons/at-solid.svg'),
-                      color: Colors.black,
-                      constraints: const BoxConstraints(),
-                      padding: EdgeInsets.zero,
-                    ),
-                    const SizedBox(width: 16),
-                    IconButton(
-                      onPressed: () async => await launchUrl(Uri.parse('https://t.me/sowntt')),
-                      icon: SvgPicture.asset('assets/icons/telegram.svg'),
-                      color: Colors.black,
-                      constraints: const BoxConstraints(),
-                      padding: EdgeInsets.zero,
-                    ),
-                  ],
-                )
-                // ElevatedButton(
-                //   onPressed: () {},
-                //   style: ButtonStyle(
-                //     foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                //     backgroundColor: MaterialStateProperty.all<Color>(Colors.yellow.shade800),
-                //     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                //       RoundedRectangleBorder(
-                //         borderRadius: BorderRadius.circular(8),
-                //         side: BorderSide(color: Colors.yellow.shade800),
-                //       ),
-                //     ),
-                //   ),
-                //   child: const Padding(
-                //     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 32),
-                //     child: Text(
-                //       'Contact',
-                //       style: TextStyle(
-                //         fontSize: 24,
-                //         fontFamily: 'Inter',
-                //       ),
-                //     ),
-                //   ),
-                // )
-              ],
-            ),
-            const Spacer(),
-            AnimatedOpacity(
-              opacity: opacityLevel,
-              duration: const Duration(seconds: 2),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(0),
+                ],
+              ),
+              const Spacer(),
+              AnimatedOpacity(
+                opacity: opacityLevel,
+                duration: const Duration(seconds: 1),
                 child: Image.asset(
                   'assets/avatar.png',
-                  width: 512,
-                  height: 512,
+                  width: size.width / 4,
+                  height: size.width / 4,
                 ),
               ),
-            ),
-            const Spacer(),
-          ],
+              const Spacer(),
+            ],
+          ),
         ),
       ),
     );
