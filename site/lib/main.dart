@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget _buildMobile(BuildContext context) {
     final media = MediaQuery.of(context).size;
     final heading = media.width ~/ 40 > 18 ? media.width ~/ 40 : 18;
-    final avatarSize = media.width ~/ 4;
+    final avatarSize = media.width ~/ 2;
     return Padding(
       padding: const EdgeInsets.all(32),
       child: Center(
@@ -110,6 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 1.3,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w800,
+                    color: Colors.black
                   ),
                   children: [
                     const TextSpan(text: 'Hi, I\'m '),
