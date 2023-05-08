@@ -55,6 +55,7 @@ jobs:
 
   deploy:
     name: Deploy to Github Pages
+    needs: build
     environment:
       name: Deployment
       url: ${{ steps.deployment.outputs.page_url }}
